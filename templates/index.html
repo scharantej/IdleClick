@@ -1,0 +1,14 @@
+
+<h1>Incremental Game</h1>
+
+<p>Your level: {{ player_level }}</p>
+<p>Your resources: {{ resources }}</p>
+
+<form action="/process_upgrade" method="post">
+<input type="submit" name="upgrade_type" value="resource_generation">
+<input type="submit" name="upgrade_type" value="attack_power">
+</form>
+
+<a href="/purchase">Purchase items</a>
+
+
